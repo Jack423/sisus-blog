@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <q-layout view="lHh Lpr lFf" style="padding: 32px; background-color: #c5e1a5;">
+    <q-header elevated class="flat">
+      <q-toolbar>
+        <q-toolbar-title>
+          <strong>Sisu's Blog</strong>
+        </q-toolbar-title>
+
+        <div>
+          <q-btn flat to="/" label="Home" />
+          <q-btn flat to="/about" label="About" />
+          <q-btn flat to="/archive" label="Archive" />
+        </div>
+      </q-toolbar>
+    </q-header>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+  </q-layout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'LayoutDefault',
+  components: {},
+  data () {}
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
