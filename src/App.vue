@@ -1,6 +1,6 @@
 <template>
-  <q-layout view="lHh Lpr lFf" style="padding: 32px; background-color: #c5e1a5;">
-    <q-header elevated class="flat">
+  <q-layout view="lHh Lpr lFf" style="padding: 16px; background-color: #c5e1a5; font-family: app-font;">
+    <q-header class="flat">
       <q-toolbar>
         <q-toolbar-title>
           <strong>Sisu's Blog</strong>

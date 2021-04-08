@@ -1,0 +1,37 @@
+@font-face {
+  font-family: EBGaramond;
+  src: url(./fonts/EBGaramond.woff);
+}
+
+// declare a class which applies it
+.app-font {
+  font-family: 'EBGaramond'
+}
+
+.text-ellipsis--5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  // Addition lines for  line or multiline ellipsis
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+// .text-ellipsis--4
+//   text-overflow: ellipsis
+//   overflow: hidden
+//   // Addition lines for 2 line or multiline ellipsis
+//   display: -webkit-box !important
+//   -webkit-line-clamp: 4
+//   -webkit-box-orient: vertical
+//   white-space: normal
+
+// .text-ellipsis--5
+//   text-overflow: ellipsis
+//   overflow: hidden
+//   // Addition lines for 2 line or multiline ellipsis
+//   display: -webkit-box !important
+//   -webkit-line-clamp: 5
+//   -webkit-box-orient: vertical
+//   white-space: normal
